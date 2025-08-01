@@ -1,8 +1,8 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+test('renders CI/CD text', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  const element = screen.getByText(/CI\/CD/i); // 정규표현식도 수정
+  expect(element).toBeInTheDocument();
 });
